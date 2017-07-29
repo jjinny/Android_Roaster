@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jjin5783.roster.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Roaster"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/enterName"
+                android:text="Enter your name:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:id="@+id/inputName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="12"
+                android:layout_marginTop="10dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thinks We Are Going Steady"
+                android:layout_marginTop="10dp"
+                android:checked="false" />
+
+            <TextView
+                android:id="@+id/select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select your eye colour"
+                android:layout_marginTop="10dp" />
+
+            <Spinner
+                android:id="@+id/selectEyeColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View your birthday"
+                android:layout_marginTop="10dp"
+                android:clickable="false" />
+            <EditText
+                android:id="@+id/textBirthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mm-dd-yyyy">
+            </EditText>
+            <Button
+                android:id="@+id/buttonCalendar"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Choose date"
+                android:layout_width="100dp" />
+
+            <LinearLayout
+                android:id="@+id/calendarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <DatePicker
+                    android:id="@+id/dpResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/selectShirtSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select a shirt size"
+                android:layout_marginTop="10dp"
+                android:clickable="false" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium">
+                <!-- XS,S,M,L,XL,XXL -->
+                <RadioButton
+                    android:id="@+id/XS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="XS" />
+                <RadioButton
+                    android:id="@+id/S"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="S" />
+
+                <RadioButton
+                    android:id="@+id/M"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="M" />
+                <RadioButton
+                    android:id="@+id/L"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="L" />
+                <RadioButton
+                    android:id="@+id/XL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="XL" />
+                <RadioButton
+                    android:id="@+id/XXL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="XXL" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/pants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pants size"
+                android:layout_marginTop="10dp"
+                android:clickable="false" />
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:max="16" />
+
+            <TextView
+                android:id="@+id/shirts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shirts size"
+                android:layout_marginTop="10dp"
+                android:clickable="false" />
+
+            <SeekBar
+                android:id="@+id/seekBar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:max="12" />
+
+            <TextView
+                android:id="@+id/shoe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shoe size"
+                android:layout_marginTop="10dp"
+                android:clickable="false" />
+            <SeekBar
+                android:id="@+id/seekBar3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:progress="4"
+                android:max="12" />
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_marginTop="25dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
